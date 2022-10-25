@@ -1,0 +1,16 @@
+body {
+  background-color: darkslategray;
+}
+
+.header {
+  color: rgb(233, 32, 181);
+}
+ul li {
+  color: #077379;
+}
+
+#about-text {
+  background-color: white;
+  padding: 100px;
+  opacity: 30%;
+}
