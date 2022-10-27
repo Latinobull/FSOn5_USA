@@ -1,0 +1,15 @@
+* {
+  text-align: center;
+}
+h1 {
+  text-decoration: solid underline;
+  text-shadow: 5px 5px 4px gray;
+}
+p {
+  padding: 50px 200px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+p::first-letter {
+}

@@ -1,4 +1,10 @@
 /* GENERAL STYLES */
+:root {
+  --main-color: #1d5e1e;
+  --secondary-color: #8f8f8f;
+  --default-size: 25px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,13 +21,13 @@ header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 header h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: var(--default-size);
 }
 
 header h1 .seo {
@@ -33,7 +39,7 @@ header nav {
   margin-right: 20px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: var(--default-size);
 }
 
 header nav ul {
@@ -48,12 +54,12 @@ header nav ul li {
 /* TEXT STYLES */
 
 a {
-  color: #ffffff;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 p {
-  font-size: 16px;
+  font-size: var(--default-size);
 }
 
 /* HERO DIV WITH BACKGROUND IMAGE */
@@ -97,12 +103,12 @@ main {
   width: 20%;
   height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2a607c;
+  background-color: var(--main-color);
 }
 
 .benefit {
   margin-bottom: 32px;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .benefit h3 {
@@ -123,8 +129,8 @@ main {
   padding: 50px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 .service img {

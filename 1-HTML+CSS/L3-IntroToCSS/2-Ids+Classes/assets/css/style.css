@@ -11,3 +11,25 @@ Id's target 1 element
 
 */
 
+h2 {
+  color: red;
+}
+#celebrity-header {
+  color: green;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.black {
+  background-color: black;
+}
+
+/* h1,h2 {
+
+} */
+
+ol li {
+  list-style: none;
+}

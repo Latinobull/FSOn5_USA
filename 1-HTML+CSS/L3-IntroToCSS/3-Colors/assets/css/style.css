@@ -1,16 +1,15 @@
 body {
-  background-color: darkslategray;
+  background-color: rgb(79, 32, 218);
 }
 
-.header {
-  color: rgb(233, 32, 181);
+header {
+  color: rgba(255, 2, 2, 0.5);
 }
 ul li {
-  color: #077379;
+  color: #1b7e84;
 }
 
 #about-text {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   padding: 100px;
-  opacity: 30%;
 }
