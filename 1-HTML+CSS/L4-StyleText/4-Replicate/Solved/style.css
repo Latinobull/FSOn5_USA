@@ -1,0 +1,60 @@
+:root {
+  --main-color: #2f4f4f;
+  --accent-color: 132, 144, 133;
+  --terniary-color: #847863;
+  --my-white: #ebeff0;
+}
+body {
+  background-color: var(--main-color);
+}
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+.imageRight {
+  display: block;
+  margin-left: auto;
+}
+.imageCenter {
+  display: block;
+  margin: auto;
+}
+.light-text {
+  color: var(--my-white);
+}
+main > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+}
+
+.light-section {
+  background-color: var(--my-white);
+}
+.light-header {
+  background-color: var(--terniary-color);
+  color: var(--my-white);
+}
+
+section p {
+  background-color: rgba(var(--accent-color), 0.2);
+}
+
+#albums-list {
+  list-style: none;
+}
+#albums-list li {
+  background-color: rgb(var(--accent-color));
+}
+ul li a {
+  background-color: rgba(var(--accent-color), 0.2);
+}
+
+h3:hover {
+  color: var(--terniary-color);
+}

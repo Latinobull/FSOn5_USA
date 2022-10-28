@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,900&display=swap');
 * {
   text-align: center;
 }
-h1 {
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.main-header {
   text-decoration: solid underline;
-  text-shadow: 5px 5px 4px gray;
 }
 p {
   padding: 50px 200px;
   letter-spacing: 3px;
   line-height: 2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p::first-letter {
+  font-size: 30px;
+  color: gray;
 }

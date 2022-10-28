@@ -1,5 +1,15 @@
 h1 {
+  /* Allow us to change the position of our text based on the container */
+  text-align: center;
+  max-width: 600px;
+  /* Allows us to add some kind of line through our words or text */
+  text-decoration: underline;
+  /* Used to manipulate the casing of our text */
+  text-transform: capitalize;
+  /* text-shadow: x-axis y-axis blur color */
+  text-shadow: 5px 5px 2px navy;
 }
 
 p {
+  line-height: 1.5;
 }
