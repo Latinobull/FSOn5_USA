@@ -1,0 +1,30 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+#c {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 200px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 3px;
+  padding: 50px;
+}
+
+#a {
+  background-color: orange;
+}
+#b {
+  background-color: red;
+}

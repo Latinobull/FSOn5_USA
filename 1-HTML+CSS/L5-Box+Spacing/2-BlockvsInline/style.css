@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  background-color: orange;
+  text-align: center;
+}
+
+h4 {
+  background-color: red;
+  text-align: right;
+}
+
+a {
+  background-color: aqua;
+  width: 300px;
+  height: 300px;
+}
+
+/* h3:hover {
+  display: none;
+} */
