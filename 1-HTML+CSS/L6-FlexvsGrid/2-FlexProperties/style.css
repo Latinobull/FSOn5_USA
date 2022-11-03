@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.basis {
+  display: flex;
+  height: 500px;
+}
+div {
+  margin: 10px;
+  height: 250px;
+  width: 10%;
+}
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
+#yellow {
+  background-color: yellow;
+}

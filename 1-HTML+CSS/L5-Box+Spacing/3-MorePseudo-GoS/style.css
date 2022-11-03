@@ -1,0 +1,20 @@
+/* li:first-child {
+  background-color: red;
+}
+
+li:last-child {
+  background-color: orange;
+}
+
+li:not(:first-child) {
+  background-color: purple;
+} */
+/* 
+a = a number thats going to be looped
+n = loop counter start at 0 and keep increasing by 1
+b = offset to change the initial number of the counter
+
+*/
+li:nth-child(odd) {
+  background-color: #968c96;
+}

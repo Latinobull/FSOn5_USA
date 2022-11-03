@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto 50px;
+}

@@ -3,3 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+header {
+  display: flex;
+  height: 300px;
+  background-color: grey;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  background-color: white;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 4px;
+}
+
+section {
+  display: flex;
+  max-width: 500px;
+}
+section h2 {
+  padding: 200px;
+  background-color: red;
+}

@@ -10,6 +10,7 @@ h3 {
 h4 {
   background-color: red;
   text-align: right;
+  display: inline-block;
 }
 
 a {
@@ -18,6 +19,9 @@ a {
   height: 300px;
 }
 
-/* h3:hover {
+#a {
   display: none;
-} */
+}
+h3:hover {
+  display: none;
+}

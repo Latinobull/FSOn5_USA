@@ -1,0 +1,181 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+    'featuredProduct secondaryProduct'
+    'featuredProduct CTA';
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url('../images/furniture1.png');
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url('../images/furniture2.png');
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: url('../images/woodbg.png');
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#headline {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 5px solid #ff6200;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'bookcases bedroom patio'
+    'couches couches patio'
+    'desks desks desks';
+}
+
+#bookcases {
+  grid-area: bookcases;
+  background-image: url('../images/bookcases@2x.png');
+}
+#bedroom {
+  grid-area: bedroom;
+  background-image: url('../images/beds@2x.png');
+}
+
+#couches {
+  grid-area: couches;
+  background-image: url('../images/couch@2x.png');
+}
+
+#patio {
+  grid-area: patio;
+  background-image: url('../images/patio@2x.png');
+}
+
+#desks {
+  grid-area: desks;
+  background-image: url('../images/desks@2x.png');
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #ff6200;
+}
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #ff6200;
+  font-weight: 700;
+}
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #ff6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
