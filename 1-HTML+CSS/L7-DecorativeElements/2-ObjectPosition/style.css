@@ -1,0 +1,11 @@
+div {
+  border: solid 5px black;
+  width: 500px;
+  height: 50vh;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

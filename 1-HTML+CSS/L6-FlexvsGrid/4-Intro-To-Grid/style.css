@@ -12,3 +12,56 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px auto 50px;
 }
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  background-color: #555;
+  color: #fff;
+  align-items: center;
+}
+header nav {
+  justify-self: flex-end;
+}
+li {
+  display: inline;
+}
+a {
+  color: #fff;
+}
+main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-areas:
+    'sec-1 sec-2 sec-2'
+    'sec-3 sec-3 sec-4'
+    'sec-5 sec-5 sec-5';
+}
+main section {
+  background: lightseagreen;
+  border: 3px solid #555;
+}
+.section-1 {
+  grid-area: sec-1;
+}
+.section-2 {
+  grid-area: sec-2;
+}
+.section-3 {
+  grid-area: sec-3;
+}
+
+.section-4 {
+  grid-area: sec-4;
+}
+
+.section-5 {
+  grid-area: sec-5;
+}
+footer {
+  grid-column: 1/3;
+}

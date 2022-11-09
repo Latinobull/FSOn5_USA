@@ -1,0 +1,7 @@
+div::before {
+  content: 'Red is';
+}
+
+div::after {
+  content: 'Color';
+}
