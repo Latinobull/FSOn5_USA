@@ -1,5 +1,28 @@
-div {
-  width: 50vw;
-  height: 50vh;
-  background-color: red;
+#linear {
+  width: 70vw;
+  height: 70vh;
+  background-image: linear-gradient(
+    0deg,
+    red 10%,
+    purple 10%,
+    purple 40%,
+    green 60%,
+    blue 60%,
+    blue 70%,
+    red
+  );
+  margin-bottom: 100px;
+}
+
+#radial {
+  width: 70vw;
+  height: 70vh;
+  background-image: radial-gradient(
+    ellipse at center,
+    red 20%,
+    blue 20%,
+    blue 30%,
+    green 70%,
+    red
+  );
 }

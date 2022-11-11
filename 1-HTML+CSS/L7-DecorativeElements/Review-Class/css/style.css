@@ -1,0 +1,35 @@
+:root {
+  --main-color: red;
+  --secondary-color:rgba(41, 55, 180, .70);
+}
+
+#People {
+  color: green;
+  background-color: var(--secondary-color);
+}
+.my-style {
+  color: var(--main-color);
+  background-color: black;
+  font-size: 20px;
+  text-align: center;
+}
+/* .my-style:hover {
+  color: black;
+  background-color: white;
+  font-size: 50px;
+} */
+
+img {
+  width: 800px;
+  height: 200px;
+}
+
+p {
+  width: 400px;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
+
+li {
+  color: var(--main-color);
+}
