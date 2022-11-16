@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  background-color: #555;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin-right: 40px;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+section {
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+}
+#s1 {
+  background-color: red;
+}
+
+#s2 {
+  background-color: blue;
+}
+#s3 {
+  background-color: green;
+}
+
+main {
+  display: flex;
+}
+
+#parentRow {
+  display: flex;
+}
+
+.parentColumn {
+  display: flex;
+  flex-direction: column;
+}

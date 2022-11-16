@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 40px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  max-width: 95%;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 30px;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 30%;
+  right: 10%;
+  background-color: lightcoral;
+  border-radius: 12px;
+  padding: 8px;
+}
