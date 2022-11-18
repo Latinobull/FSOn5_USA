@@ -1,0 +1,19 @@
+div {
+  width: 300px;
+  height: 300px;
+  border: solid black 3px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+div:nth-child(1) {
+  background-color: red;
+}
+div:nth-child(2) {
+  background-color: blue;
+}
+div:nth-child(3) {
+  background-color: purple;
+}

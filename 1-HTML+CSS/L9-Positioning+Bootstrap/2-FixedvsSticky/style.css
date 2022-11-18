@@ -5,8 +5,10 @@
 }
 
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
   padding: 40px 20px;
   background-color: #333;
   color: #fff;
@@ -16,6 +18,7 @@ header {
 main {
   max-width: 95%;
   text-align: center;
+  margin-top: 120px;
 }
 h2 {
   margin-bottom: 30px;
@@ -23,8 +26,8 @@ h2 {
 
 #fixed {
   position: fixed;
-  bottom: 30%;
-  right: 10%;
+  right: 200px;
+  bottom: 100px;
   background-color: lightcoral;
   border-radius: 12px;
   padding: 8px;

@@ -43,8 +43,12 @@ header {
 
 /* Box 2 in Square 1 */
 #relative-box-2 {
+  position: relative;
+  left: 100px;
 }
 
 /* Box 2 in Square 2 */
 #absolute-box-2 {
+  position: absolute;
+  left: 100px;
 }
