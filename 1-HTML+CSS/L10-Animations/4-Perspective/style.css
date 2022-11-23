@@ -10,10 +10,42 @@ div {
 
 div:nth-child(1) {
   background-color: red;
+  animation: rotateX 2s alternate infinite;
 }
 div:nth-child(2) {
   background-color: blue;
+  animation: rotateY 2s alternate infinite;
 }
 div:nth-child(3) {
   background-color: purple;
+  animation: rotateZ 2s alternate infinite;
+}
+
+@keyframes rotateX {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-70deg) rotateX(100deg);
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateX(50deg) rotateY(100deg);
+  }
+}
+
+@keyframes rotateZ {
+  0% {
+    transform: perspective(400px) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(400px) rotateZ(100deg);
+  }
 }

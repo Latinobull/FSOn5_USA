@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="submit.html">
+        <label for="fname"
+          ><span>First name:</span>
+          <input type="text" name="first" id="fname" placeholder="Donnahue" />
+        </label>
+        <label for="lname"
+          ><span>Last Name</span>
+          <input type="text" name="last" id="lname" placeholder="George" />
+        </label>
+        <label for="email"
+          ><span>Email:</span>
+          <input type="email" name="email" id="email" placeholder="John" />
+        </label>
+        <label for="age"
+          ><span>Age:</span>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="20"
+            min="21"
+            required
+          />
+        </label>
+        <label for="Portfolio"
+          ><span>Portfolio:</span>
+          <input
+            type="text"
+            name="Portfolio"
+            id="Portfolio"
+            placeholder="www.google.com"
+          />
+        </label>
+        <label for="password">
+          <span>Password:</span>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="******"
+            required
+          />
+        </label>
+        <h4>Which Languages do you know?</h4>
+        <section><input type="checkbox" /> <label>Javascript</label></section>
+        <section><input type="checkbox" /> <label>HTML</label></section>
+        <section><input type="checkbox" /> <label>CSS</label></section>
+        <section><input type="checkbox" /> <label>Python</label></section>
+
+        <section>
+          <button type="submit">Submit</button>
+          <button>Cancel</button>
+          <button disabled>Disabled</button>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

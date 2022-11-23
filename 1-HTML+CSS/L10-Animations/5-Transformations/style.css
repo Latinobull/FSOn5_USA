@@ -1,4 +1,6 @@
-
+:root {
+  --animation-properties: 2s alternate infinite;
+}
 div {
   width: 200px;
   height: 200px;
@@ -10,27 +12,27 @@ div:nth-child(1) {
   background-color: red;
 }
 div:nth-child(1):hover {
-
+  animation: scale var(--animation-properties);
 }
 div:nth-child(2) {
   background: blue;
 }
 
 div:nth-child(2):hover {
-
+  animation: rotateAni var(--animation-properties);
 }
 
 div:nth-child(3) {
   background-color: purple;
 }
 div:nth-child(3):hover {
-
+  animation: translateAni var(--animation-properties);
 }
 div:nth-child(4) {
   background-color: green;
 }
 div:nth-child(4):hover {
-
+  animation: skewAni var(--animation-properties);
 }
 
 body {
@@ -60,12 +62,12 @@ body {
 
 @keyframes translateAni {
   to {
-    transform: translate(10px, -200px);
+    transform: translate(110px, -300px);
   }
 }
 
 @keyframes skewAni {
   to {
-    transform: skew(10deg, 30deg);
+    transform: perspective(400px) skew(10deg, 30deg);
   }
 }
