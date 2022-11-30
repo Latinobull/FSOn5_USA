@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+}
+
+.button--submit {
+  color: black;
+  background-color: lawngreen;
+}
+.button--cancel {
+  color: white;
+  background-color: red;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}

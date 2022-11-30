@@ -13,7 +13,13 @@
       <form action="submit.html">
         <label for="fname"
           ><span>First name:</span>
-          <input type="text" name="first" id="fname" placeholder="Donnahue" />
+          <input
+            type="text"
+            name="first"
+            id="fname"
+            placeholder="Donnahue"
+            required
+          />
         </label>
         <label for="lname"
           ><span>Last Name</span>
@@ -25,7 +31,14 @@
         </label>
         <label for="age"
           ><span>Age:</span>
-          <input type="number" name="age" id="age" placeholder="25" />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="25"
+            min="21"
+            max="65"
+          />
         </label>
         <label for="Portfolio"
           ><span>Portfolio:</span>
@@ -34,7 +47,8 @@
             name="Portfolio"
             id="Portfolio"
             placeholder="www.google.com"
-
+            pattern="[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)"
+            title="Please use a valid url name with it's domain (ex: google.com)"
           />
         </label>
         <label for="password">
@@ -44,6 +58,8 @@
             name="password"
             id="password"
             placeholder="******"
+            minlength="6"
+            maxlength="12"
           />
         </label>
 
@@ -52,3 +68,4 @@
     </div>
   </body>
 </html>
+

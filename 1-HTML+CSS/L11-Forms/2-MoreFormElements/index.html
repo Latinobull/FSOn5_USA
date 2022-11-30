@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <form>
-        <textarea name="" id="" cols="40" rows="20"></textarea>
-        <select name="" id=""></select>
-        <label for="favFood">Favorite Food</label>
-        <input type="text" />
+      <textarea
+        style="resize: none"
+        name=""
+        id=""
+        cols="20"
+        rows="10"
+      ></textarea>
+      <select name="" id="">
+        <optgroup label="House Pets"></optgroup>
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Lizard">Lizard</option>
+        <optgroup label="Not Pets"></optgroup>
+        <option value="Lion">Lion</option>
+        <option value="Gorilla">Gorilla</option>
+      </select>
+      <!-- <select name="" id="">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+      </select>
+      <img src="" alt="" /> -->
+      <label for="favLanguage">Favorite Coding Language</label>
+      <input list="languages" type="text" id="favLanguage" name="favLanguage" />
 
+      <datalist id="languages">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JS</option>
+        <option>Python</option>
+        <option>PHP</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>Kotlin</option>
+      </datalist>
     </form>
-
-</body>
-
+  </body>
 </html>

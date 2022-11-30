@@ -27,3 +27,25 @@ button {
 section {
   display: flex;
 }
+
+button:enabled {
+  color: white;
+  background-color: rgb(26, 128, 161);
+}
+button:disabled {
+  background-color: darkgray;
+  color: black;
+}
+input[type='number']:in-range {
+  border-color: green;
+}
+
+input[type='number']:out-of-range {
+  border-color: red;
+}
+input[type='checkbox']:checked + label {
+  color: rgb(26, 128, 161);
+}
+label:has(input:required) {
+  font-weight: 800;
+}
