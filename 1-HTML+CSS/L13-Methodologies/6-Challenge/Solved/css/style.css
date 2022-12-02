@@ -1,0 +1,136 @@
+/* Navigation styles */
+.logo {
+  background: white;
+  height: 230px;
+  background-image: url('../images/jakes-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  padding: 20px;
+}
+
+.nav__order,
+.nav__list,
+.nav__online {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__order,
+.nav__online {
+  width: 25%;
+}
+.nav__list {
+  width: 50%;
+}
+
+.nav__items {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: arial;
+}
+.nav__button {
+  font-size: 16px;
+  padding: 15px;
+  width: 50%;
+}
+.nav__button--order {
+  background-color: yellow;
+  color: black;
+
+}
+
+.nav__button--online {
+  background-color: skyblue;
+  color: black;
+}
+
+/* Column styles */
+.content {
+  display: flex;
+  height: 1200px;
+  width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.meal1,
+.meal2,
+.meal3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.meal1 {
+  margin-top: 20px;
+  background-image: url('../images/steak.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.meal2 {
+  background-image: url('../images/soup.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.meal3 {
+  background-image: url('../images/cheesecake.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.meal1__text,
+.meal2__text,
+.meal3__text {
+  background: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px 40px;
+  color: white;
+}
+.meal1__header,
+.meal2__header,
+.meal3__header {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.meal1__desc,
+.meal2__desc,
+.meal3__desc {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 100px;
+}
+
+.footer__icon {
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.footer__icon--ig {
+  color: red;
+}
+
+.footer__icon--fb {
+  color: skyblue;
+}
+
+.footer__icon--tw {
+  color: yellow;
+}

@@ -1,0 +1,33 @@
+@use '../utils/colors';
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: colors.$footer-background;
+  padding: 20px 10px;
+  ul li a {
+    text-decoration: none;
+    color: colors.$footer-text;
+    margin: 0 10px;
+  }
+  div img {
+    height: 14px;
+    margin-right: 5px;
+  }
+  p {
+    color: colors.$footer-text;
+  }
+}
+#left-footer {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 30%;
+}
+#footer-middle {
+  display: flex;
+}
+#right-footer {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 30%;
+}

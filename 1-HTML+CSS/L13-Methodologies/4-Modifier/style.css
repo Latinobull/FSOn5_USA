@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-left: 0;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.list__item {
+  list-style: none;
+  border: solid black;
+  margin-bottom: 5px;
+}
+
+.receipt__total {
+  border: solid black;
+  margin-bottom: 5px;
+}
+
+/* 
+*Centering
+*receipt title h1
+*some kind of grid for organizing the items
+underscore after the last amount
+flowers
+*/

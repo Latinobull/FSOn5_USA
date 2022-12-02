@@ -1,3 +1,11 @@
+.logo {
+  font-size: 60px;
+  text-decoration: none;
+}
+.header__logo {
+  color: red;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -21,4 +29,7 @@
 .footer {
   display: flex;
   justify-content: center;
+}
+.footer__logo {
+  color: green;
 }

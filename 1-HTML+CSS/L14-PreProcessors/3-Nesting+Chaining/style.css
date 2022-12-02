@@ -1,0 +1,17 @@
+.css {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.css h1 {
+  color: navy;
+}
+
+.css .header {
+  color: red;
+}
+
+.css .content {
+  color: green;
+}

@@ -12,18 +12,17 @@
   width: 100px;
   height: 30px;
   margin: 0px 10px;
+  border-radius: 12px;
+  border: none;
 }
 
 .search {
   color: white;
   background-color: green;
-  border-radius: 12px;
-  border: none;
 }
 
 .cancel {
   color: white;
   background-color: red;
-  border-radius: 12px;
-  border: none;
+
 }

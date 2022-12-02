@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  border: none;
+  width: 100px;
+  height: 35px;
+  margin: 20px;
+  color: white;
+}
+
+.enterBtn {
+  background-color: green;
+  &:hover {
+    background-color: rgb(3, 147, 3);
+  }
+  &:active {
+    background-color: green;
+  }
+}
+
+.leaveBtn {
+  background-color: rgb(173, 0, 0);
+  &:hover {
+    background-color: rgb(196, 0, 0);
+  }
+  &:active {
+    background-color: rgb(173, 0, 0);
+  }
+}
+.leaveBtn2 {
+  background-color: rgb(173, 0, 0);
+}
+.enterBtn2 {
+  background-color: green;
+}

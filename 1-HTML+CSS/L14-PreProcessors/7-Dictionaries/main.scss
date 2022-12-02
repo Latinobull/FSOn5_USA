@@ -1,0 +1,18 @@
+@use 'colors' as c;
+
+body {
+  background-color: map-get(c.$colors, 'background');
+}
+
+%box {
+  width: 300px;
+  height: 300px;
+}
+
+.a {
+  @extend %box;
+  background-color: map-get(c.$colors, 'primary');
+  &:hover {
+    background-color: map-get($map: c.$colors, $key: 'accent');
+  }
+}

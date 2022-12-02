@@ -1,0 +1,18 @@
+@use 'colors';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: colors.$background-C;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
