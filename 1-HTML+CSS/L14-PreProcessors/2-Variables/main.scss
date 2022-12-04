@@ -1,3 +1,9 @@
+// * $ represents we are creating a variable
+// *After the dollar sign is the name we are calling it
+
+
+$boxOne: yellow;
+$boxTwo: violet;
 div {
   display: flex;
 }
@@ -5,4 +11,27 @@ div {
 section {
   height: 300px;
   width: 300px;
+}
+
+section:nth-child(1) {
+  background: $boxOne;
+}
+section:nth-child(2) {
+  background: $boxTwo;
+}
+section:nth-child(3) {
+  $boxThree: black;
+  background: $boxOne;
+}
+section:nth-child(4) {
+  background: $boxTwo;
+}
+
+.test {
+  background-color: $boxOne;
+  $testBox: black;
+  h1 {
+    color: white;
+    background-color: $testBox;
+  }
 }

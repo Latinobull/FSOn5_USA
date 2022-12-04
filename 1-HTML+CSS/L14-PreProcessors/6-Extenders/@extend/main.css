@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.btn {
+.enterBtn2, .leaveBtn2, .leaveBtn, .enterBtn {
   border: none;
   width: 100px;
   height: 35px;

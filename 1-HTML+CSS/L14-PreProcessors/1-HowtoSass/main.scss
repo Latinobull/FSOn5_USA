@@ -1,0 +1,24 @@
+.sass {
+  width: 500px;
+  height: 400px;
+  background-color: green;
+
+  //   * Concatenation
+  &:hover {
+    background-color: violet;
+  }
+}
+.test {
+  background: gray;
+  padding: 100px;
+
+  h1 {
+    background-color: yellow;
+  }
+  div {
+
+    h1{
+        
+    }
+  }
+}

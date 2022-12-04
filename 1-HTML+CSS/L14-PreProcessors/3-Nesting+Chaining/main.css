@@ -1,1 +1,29 @@
-/*# sourceMappingURL=main.css.map */
+.sass {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sass h1 {
+  color: navy;
+}
+.sass .header {
+  color: red;
+}
+.sass .content {
+  color: green;
+}
+
+.BEM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BEM h1 {
+  color: navy;
+}
+.BEM__header {
+  color: red;
+}
+.BEM__content {
+  color: green;
+}/*# sourceMappingURL=main.css.map */

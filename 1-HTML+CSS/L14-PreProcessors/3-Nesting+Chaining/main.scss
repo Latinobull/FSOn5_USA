@@ -1,1 +1,29 @@
+.sass {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: navy;
+  }
+  .header {
+    color: red;
+  }
+  .content {
+    color: green;
+  }
+}
 
+.BEM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: navy;
+  }
+  &__header {
+    color: red;
+  }
+  &__content {
+    color: green;
+  }
+}

@@ -5,4 +5,28 @@ div {
 section {
   height: 300px;
   width: 300px;
+}
+
+section:nth-child(1) {
+  background: yellow;
+}
+
+section:nth-child(2) {
+  background: violet;
+}
+
+section:nth-child(3) {
+  background: yellow;
+}
+
+section:nth-child(4) {
+  background: violet;
+}
+
+.test {
+  background-color: yellow;
+}
+.test h1 {
+  color: white;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

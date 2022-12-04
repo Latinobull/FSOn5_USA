@@ -4,15 +4,12 @@
   align-items: center;
 }
 
-.btn {
+.enterBtn {
   border: none;
-  width: 100px;
-  height: 35px;
+  width: 30px;
+  height: 60px;
   margin: 20px;
   color: white;
-}
-
-.enterBtn {
   background-color: green;
 }
 .enterBtn:hover {
@@ -23,6 +20,11 @@
 }
 
 .leaveBtn {
+  border: none;
+  width: 60px;
+  height: 30px;
+  margin: 20px;
+  color: white;
   background-color: rgb(173, 0, 0);
 }
 .leaveBtn:hover {
@@ -33,9 +35,19 @@
 }
 
 .leaveBtn2 {
+  border: none;
+  width: 160px;
+  height: 130px;
+  margin: 20px;
+  color: white;
   background-color: rgb(173, 0, 0);
 }
 
 .enterBtn2 {
+  border: none;
+  width: 230px;
+  height: 20px;
+  margin: 20px;
+  color: white;
   background-color: green;
 }/*# sourceMappingURL=main.css.map */

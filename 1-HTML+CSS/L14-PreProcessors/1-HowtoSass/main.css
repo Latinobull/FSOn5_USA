@@ -1,0 +1,16 @@
+.sass {
+  width: 500px;
+  height: 400px;
+  background-color: green;
+}
+.sass:hover {
+  background-color: violet;
+}
+
+.test {
+  background: gray;
+  padding: 100px;
+}
+.test h1 {
+  background-color: yellow;
+}/*# sourceMappingURL=main.css.map */

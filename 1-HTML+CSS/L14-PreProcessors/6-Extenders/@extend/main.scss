@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
-.btn {
+%btn {
   border: none;
   width: 100px;
   height: 35px;
@@ -12,6 +12,7 @@
 }
 
 .enterBtn {
+  @extend %btn;
   background-color: green;
   &:hover {
     background-color: rgb(3, 147, 3);
@@ -22,6 +23,7 @@
 }
 
 .leaveBtn {
+  @extend %btn;
   background-color: rgb(173, 0, 0);
   &:hover {
     background-color: rgb(196, 0, 0);
@@ -31,8 +33,10 @@
   }
 }
 .leaveBtn2 {
+  @extend %btn;
   background-color: rgb(173, 0, 0);
 }
 .enterBtn2 {
+  @extend %btn;
   background-color: green;
 }
