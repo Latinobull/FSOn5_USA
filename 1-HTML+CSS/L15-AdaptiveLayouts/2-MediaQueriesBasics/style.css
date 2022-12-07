@@ -93,21 +93,45 @@ body {
   height: 300px;
 }
 
-/* @media <selector> and (width: dimensions) */
-
-@media screen and (min-width: 1500px) {
+/* @media screen and (width: dimensions) */
+/* ! if width is 2000px or more apply these styles */
+@media screen and (min-width: 1400px) {
   body {
-    background-color: wheat;
+    background-color: black;
   }
-}
-@media screen and (max-width: 1200px) {
   .box {
-    background-color: blue;
-    width: 500px;
+    background-color: orange;
+    width: 200px;
+    height: 400px;
   }
 }
+/* ! if width is 1000px or less apply these styles */
+@media screen and (max-width: 1000px) {
+  .box {
+    background-color: green;
+    width: 400px;
+    height: 400px;
+  }
+}
+
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more — 4k, TV */
+
+@media screen and (min-width: 320px){
+
+}
+@media screen and (min-width: 480px){
+  
+}
+@media screen and (min-width: 768px){
+  
+}
+@media screen and (min-width: 1024px){
+  
+}
+@media screen and (min-width: 1200px){
+  
+}

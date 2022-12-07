@@ -108,3 +108,43 @@ footer div img {
   height: 14px;
   margin-right: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  main img {
+    width: 270px;
+    height: 75px;
+  }
+  input {
+    width: 450px;
+    height: 30px;
+  }
+  #footer-middle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main img {
+    width: 200px;
+    height: 50px;
+  }
+  input {
+    width: 250px;
+    height: 20px;
+  }
+  main div {
+    display: flex;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #left-footer {
+    margin-bottom: 40px;
+  }
+}

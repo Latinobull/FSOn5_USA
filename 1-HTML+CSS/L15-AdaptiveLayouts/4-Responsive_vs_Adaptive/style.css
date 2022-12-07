@@ -13,9 +13,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #aaa;
+  background-color: #aaa;
   padding: 60px;
   margin-bottom: 20px;
+  transition: flex-direction 2s, background-color 2s;
 }
 
 .responsive-list,
@@ -27,5 +28,6 @@ li {
   .adaptive {
     justify-content: center;
     flex-direction: column;
+    background-color: red;
   }
 }
