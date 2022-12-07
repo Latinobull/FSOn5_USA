@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: #333;
+}
+
+.slider {
+  pointer-events: none;
+  margin: 0px;
+  cursor: pointer;
+  /*width:200px;*/
+
+  padding-left: 30%;
+  padding-right: 30%;
+  /*height:6px;*/
+
+  background-color: #17694f;
+  box-sizing: border-box;
+}
+
+.slider.focusable {
+  border: 1px solid #222;
+}
+
+.thumb {
+  cursor: pointer;
+  border-color: #333;
+  border-style: solid;
+  /*border-width:4px; width:16px; height:16px;*/
+
+  background-color: #0f4534;
+  background-color: rgba(100, 100, 100, 1);
+  border-radius: 50%;
+  position: absolute;
+  /*top:-6px;left:50px;*/
+}
+
+.track {
+  pointer-events: none;
+  height: 100%;
+  background-color: #4ac4ac;
+}
+
+.container {
+  position: relative;
+  margin: 200px auto;
+  height: 30px;
+  width: 220px;
+}
+
+.output {
+  pointer-events: none;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50% 50% 0 50%;
+  background-color: #4ac4ac;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -45px;
+  /*left:45px*/
+}
+
+.output p {
+  pointer-events: none;
+  font-size: 14px;
+  color: #0a1a17;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+body {
+  background-color: orange;
+}
+.box {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+/* @media <selector> and (width: dimensions) */
+
+@media screen and (min-width: 1500px) {
+  body {
+    background-color: wheat;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    background-color: blue;
+    width: 500px;
+  }
+}
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more — 4k, TV */
