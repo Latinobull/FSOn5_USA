@@ -88,6 +88,12 @@ footer div img {
 footer p {
   color: #bdc1c6;
 }
+@media screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 #left-footer {
   display: flex;
@@ -97,6 +103,11 @@ footer p {
 
 #footer-middle {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  #footer-middle {
+    display: none;
+  }
 }
 
 #right-footer {

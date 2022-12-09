@@ -2,9 +2,9 @@ div {
   width: 100%;
   height: 70vh;
   background-image: url('court-640x427.jpg');
+  background-size: cover;
   display: grid;
-  place-items: center;
-
+  place-content: center;
 }
 
 h3 {
@@ -12,4 +12,11 @@ h3 {
   background-color: rgb(255, 255, 255, 0.5);
   padding: 30px;
   border-radius: 3px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  div {
+    background-image: url('court-1920x1280.jpg');
+  }
 }

@@ -10,12 +10,17 @@ footer {
     color: colors.$footer-text;
     margin: 0 10px;
   }
+
   div img {
     height: 14px;
     margin-right: 5px;
   }
   p {
     color: colors.$footer-text;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 #left-footer {
@@ -25,6 +30,9 @@ footer {
 }
 #footer-middle {
   display: flex;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 #right-footer {
   display: flex;
