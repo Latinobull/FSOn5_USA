@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+}
+div {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
