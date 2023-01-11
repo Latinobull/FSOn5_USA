@@ -1,0 +1,7 @@
+//String
+
+//Number
+
+// Boolean
+
+//Undefined
