@@ -8,7 +8,7 @@ const student7 = 'Dan';
 const student8 = 'Kim';
 const student9 = 'Leah';
 const student10 = 'Shaq';
-
+const student11 = 'Bob'
 console.log(`Welcome ${student1} to our class!`);
 console.log(`Welcome ${student2} to our class!`);
 console.log(`Welcome ${student3} to our class!`);
@@ -32,3 +32,29 @@ const students = [
   'Leah',
   'Shaq',
 ];
+console.log('=====================================')
+// * Original For Loop Version
+for(let i =0; i < students.length; i= i+2 ){
+  console.log(`Welcome ${students[i]} to our class!`)
+}
+console.log('Finished');
+
+//* For of Loop
+console.log('**********************************************************');
+for(let stu of students ){
+  console.log(`Welcome ${stu} to our class`)
+}
+
+// * For in Loop
+for(let index in students){
+  console.log(index)
+}
+
+for (let person of students){
+    if (person === 'Kim'){
+      console.log(`I found the manager ${person}`)
+      break
+    }else {
+      console.log(`${person} is not a manager`)
+    }
+}
