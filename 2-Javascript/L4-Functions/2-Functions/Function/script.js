@@ -38,3 +38,21 @@ function quotePrompt() {
   body.append(h1, p);
 }
 startApp();
+
+// function addNumbers(num1, num2) {
+//   let finalNumber = num1 + num2;
+//   return finalNumber;
+
+// }
+// console.log('after return logic');
+// function multiplyNum(num1, num2) {
+//   console.log(num1 * num2);
+// }
+// // let userNum = prompt('enter a number');
+// // let otherNum = prompt('enter a second number');
+// // addNumbers(parseInt(userNum), parseInt(otherNum));
+// // multiplyNum(parseInt(userNum), parseInt(otherNum));
+
+// let finalNum = addNumbers(3, 6);
+
+// console.log(finalNum);
