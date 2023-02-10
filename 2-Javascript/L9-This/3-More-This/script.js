@@ -13,6 +13,12 @@ const personObj = {
   email: 'zamoracruz@senmao.com',
   phone: '+1 (874) 594-3696',
   address: '737 Bayard Street, Broadlands, Kansas, 2130',
+  showMe: function () {
+    return this;
+  },
+  getInfo: function () {
+    return `You are ${this.name} and you live on ${this.address}`;
+  },
   about:
     'Incididunt proident reprehenderit velit laborum sint Lorem. Ipsum minim amet fugiat nulla ullamco id duis fugiat. Laboris voluptate est Lorem in laborum consequat ex aute excepteur mollit officia. Ea ad irure consequat consequat sit mollit nostrud nulla sunt. Esse esse culpa consequat cupidatat cupidatat reprehenderit veniam minim minim ullamco.\r\n',
   registered: '2018-09-20T10:42:22 +04:00',
@@ -23,16 +29,27 @@ const personObj = {
     {
       id: 0,
       name: 'Rios Craft',
+      getName: function () {
+        return this;
+      },
     },
     {
       id: 1,
       name: 'Charlene Byrd',
+      getName: function () {
+        return this;
+      },
     },
     {
       id: 2,
       name: 'Gordon Chambers',
+      getName: function () {
+        return this;
+      },
     },
   ],
   greeting: 'Hello, Zamora Cruz! You have 6 unread messages.',
   favoriteFruit: 'strawberry',
 };
+
+console.log(personObj.friends[0].getName());
