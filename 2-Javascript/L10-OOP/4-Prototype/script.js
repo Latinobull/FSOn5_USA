@@ -14,9 +14,13 @@ class Student {
   }
 }
 
+Student.prototype.getName = function () {
+  return `Your name is ${this.name}`;
+};
+
 const John = new Student('John', 14);
 
 console.log(John.age);
 console.log(John.increaseAge());
-console.log(John);
-console.log(Student.prototype);
+console.log(John.getName());
+console.log(Array.prototype);
