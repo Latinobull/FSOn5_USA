@@ -241,36 +241,28 @@ const StarWarsData = {
     },
   ],
 };
-console.log(Array.prototype);
+
 console.log(StarWarsData);
+
 const dataArr = StarWarsData.results;
 console.log(dataArr);
 
-// const Over150Arr = dataArr
-//   .filter(function (SWPerson, indexOfThatItem, theEntireArr) {
-//     return SWPerson.height > 150;
-//   })
-//   .forEach(item => {
-//     console.log(item.name, item.height);
+const finalArr = dataArr
+  .filter(item => {
+    return item.height < 175;
+  })
+  .forEach(item => {
+    console.log(item.name, item.height);
+  });
+
+const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const finalNumber = arr.reduce((initial, num) => {
+  console.log(initial);
+  return initial + num;
+}, 0);
+//   .map(num => {
+//     return num * 2;
 //   });
 
-// console.log(Over150Arr);
-
-// * Filter out any character that has the letter b in there name
-
-// dataArr.forEach(item => {
-//   console.log(item.name.toLowerCase());
-// });
-
-const noBArr = dataArr.filter(item => {
-  return !item.name.toLowerCase().includes('b');
-});
-
-noBArr.forEach(item => {
-  console.log(item.name);
-});
-const newArr = noBArr.map(item => {
-  return item.name.toLowerCase();
-});
-console.log(noBArr);
-console.log(newArr);
+console.log(finalNumber * 2);
