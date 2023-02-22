@@ -1,1 +1,1 @@
-console.log(this);
+console.log(document.body);

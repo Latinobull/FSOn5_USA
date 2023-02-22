@@ -9,9 +9,22 @@ const SWCharacters = [
   { name: 'R5-D4', height: 97 },
   { name: 'Biggs Darklighter', height: 183 },
   { name: 'Obi-Wan Kenobi', height: 182 },
+  {name: 'Jabba The Hut', height: 130}
 ];
 
 const SWContainer = document.querySelector('.listSW');
-
 console.log(SWContainer);
+SWCharacters.map(item => {
+  console.log(item);
+  const list = document.createElement('li');
+  // list.textContent = `Name: ${item.name}`;
+  list.setAttribute('class', 'card');
 
+  // const pTag = document.createElement('p');
+  // pTag.textContent = `Height: ${item.height}cm`;
+  // list.append(pTag);
+  list.innerHTML = `<h3>Name: ${item.name}</h3> <p>Height: ${item.height} </p>`;
+
+  // TODO add each li to it's parent
+  SWContainer.append(list);
+});

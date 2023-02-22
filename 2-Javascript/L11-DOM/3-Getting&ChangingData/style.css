@@ -25,7 +25,7 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
 }
 .container::after {
-  content: "";
+  content: '';
   position: absolute;
   background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
   width: 900px;
@@ -52,9 +52,9 @@ body {
   width: 250px;
   height: 400px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .container-text {
   padding: 10px 40px 10px 10px;
@@ -99,4 +99,11 @@ body {
   margin: 20px 0 0;
   color: #babdcb;
   font-size: 12px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.textContent {
+  background-color: red;
+  color: white !important;
+  font-size: 30px;
+  text-align: center;
+} /*# sourceMappingURL=style.css.map */
