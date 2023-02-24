@@ -18,3 +18,13 @@ for (let i = 0; i < randomWord.length; i++) {
   letterContainerEl.append(li);
 }
 
+body.addEventListener('keydown', e => {
+  console.log(e.key);
+  const allLi = document.querySelectorAll('li');
+
+  allLi.forEach(li => {
+    if (li.textContent.toLowerCase() === e.key.toLowerCase()) {
+      li.remove();
+    }
+  });
+});
