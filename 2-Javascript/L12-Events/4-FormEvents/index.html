@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="avatar">
+        <img
+          src="https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_960_720.png"
+          alt="Avatar"
+        />
+      </div>
+      <div class="formContainer">
+        <h2>Login</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Username"
+            id="username"
+            name="username"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            name="password"
+          />
+          <button>Log in</button>
+        </form>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+        <p class="message">
+          Forgot your password? <a href="#">Click here to reset it</a>
+        </p>
+      </div>
+      <div class="success hide">
+        <p>You have successfully logged in</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="./" method="post">
+      <div class="box">
+        <h1>Contact Form</h1>
+        <label>
+          <span>Full name *</span>
+          <input type="text" class="input_text" name="name" id="name" />
+        </label>
+        <label>
+          <span>Email *</span>
+          <input type="text" class="input_text" name="email" id="email" />
+        </label>
+        <label>
+          <span>Subject *</span>
+          <input type="text" class="input_text" name="subject" id="subject" />
+        </label>
+        <label>
+          <span>Department</span>
+          <select name="role" id="role">
+            <option value="Developer">Developer</option>
+            <option value="Manager">Manager</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+          </select>
+        </label>
+        <label>
+          <span>Message *</span>
+          <textarea class="message" name="feedback" id="feedback"></textarea>
+          <button type="submit" class="button">Submit Form</button>
+        </label>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
