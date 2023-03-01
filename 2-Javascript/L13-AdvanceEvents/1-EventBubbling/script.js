@@ -13,6 +13,7 @@ sectionEl.addEventListener('click', e => {
 });
 
 buttonEl.addEventListener('click', e => {
+  e.stopPropagation();
   console.log(e);
   alert(`This is the grey child button`);
 });

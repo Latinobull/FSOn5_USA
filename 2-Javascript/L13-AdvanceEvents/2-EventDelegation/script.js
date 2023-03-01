@@ -169,3 +169,22 @@ for (let color in CSS_COLOR_NAMES) {
 
   colorContainerEl.append(section);
 }
+
+colorContainerEl.addEventListener('click', e => {
+  if (e.target.nodeName === 'DIV') {
+    console.log('This is not a color section');
+    return;
+  }
+  const color = e.target.style.backgroundColor;
+  header.style.backgroundColor = color;
+});
+
+colorContainerEl.addEventListener('contextmenu', e => {
+  if (e.target.nodeName === 'DIV') {
+    console.log('This is not a color section');
+    return;
+  }
+  e.preventDefault();
+  const color = e.target.style.backgroundColor;
+  header.style.color = color;
+});
