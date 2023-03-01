@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: gray;
+  height: 150px;
+}
+.colorContainer {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.colorBlock {
+  width: 220px;
+  height: 220px;
+  display: grid;
+  place-items: center;
+  margin: 5px;
+}
