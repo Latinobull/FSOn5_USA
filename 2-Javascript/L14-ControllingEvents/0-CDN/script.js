@@ -7,6 +7,6 @@ const year = today.getFullYear();
 today = `${month}/${day}/${year}`;
 rawDateEl.textContent = today;
 
-const momentDate = moment().format('MMMM DD,YYYY');
+const momentDate = moment().format('MM/DD/YYYY');
 libraryDateEl.textContent = momentDate;
 console.log(momentDate);
