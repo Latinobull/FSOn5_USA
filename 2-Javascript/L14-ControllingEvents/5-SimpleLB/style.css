@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+img {
+  width: 400px;
+  height: 300px;
+  border: solid #ddd 2px;
+}
+a {
+  margin-bottom: 10px;
+}
+p {
+  text-align: center;
+  font-family: 'Mynerve', cursive;
+  font-size: 32px;
+}

@@ -1,0 +1,22 @@
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+img {
+  width: 400px;
+  height: 300px;
+  border: solid #ddd 2px;
+}
+
+.card {
+  border: solid 2px #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-family: 'Mynerve', cursive;
+  font-size: 32px;
+}
