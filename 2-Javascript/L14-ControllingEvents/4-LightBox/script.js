@@ -1,4 +1,5 @@
 const imgContainerEl = document.querySelector('.imgContainer');
+
 const city_names = [
   'Aberdeen',
   'Abilene',
@@ -399,3 +400,18 @@ for (let i = 0; i < 11; i++) {
   imgContainerEl.append(div);
 }
 
+// instance = basicLightbox.create(`
+
+// `);
+
+imgContainerEl.addEventListener('click', e => {
+  console.log(e);
+  if (e.target.nodeName !== 'IMG') {
+    return;
+  }
+  console.log(e.target.src);
+  instance = basicLightbox.create(`
+  <img src='${e.target.src}'/>
+`);
+  instance.show();
+});

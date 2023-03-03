@@ -70,11 +70,13 @@ for (let item of galleryItems) {
   array.push(item.original);
 }
 
+console.log(array);
+
 for (let i = 0; i < array.length; i++) {
   const a = document.createElement('a');
   a.setAttribute('href', array[i]);
   a.innerHTML = `<img src='${array[i]}'
-  alt='test'
+  alt='test ${i}'
   />
   `;
   galleryEl.append(a);
@@ -82,7 +84,9 @@ for (let i = 0; i < array.length; i++) {
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
-  captionDelay: 250,
+  captionDelay: 100,
+  closeText: 'X',
+  animationSlide: false,
 });
-console.log(lightbox);
-lightbox.on('show.simplelightbox');
+// console.log(lightbox);
+// lightbox.on('show.simplelightbox');
