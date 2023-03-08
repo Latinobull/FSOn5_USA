@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #233a5a;
+}
+.container {
+  margin: 40px;
+}
+h1 {
+  text-align: center;
+  color: #eee;
+}
+form {
+  display: flex;
+  margin-top: 40px;
+}
+
+input {
+  width: 85%;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 5%;
+}
+button {
+  width: 10%;
+  border-radius: 10px;
+  border: none;
+  background-color: #31527f;
+  color: #eee;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0px;
+  color: #eee;
+}
+
+.todoItem {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  background-color: rgb(148, 148, 215);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.completedItem {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  background-color: rgb(148, 148, 215);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+
+.completed {
+  background-color: green;
+}
+.remove {
+  background-color: red;
+}
