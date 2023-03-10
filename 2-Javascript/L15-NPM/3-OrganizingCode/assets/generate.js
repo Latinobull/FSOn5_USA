@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+
 export function generate(data) {
   const message = `Thank you for your interest in the ${data.role} position ${
     data.userName

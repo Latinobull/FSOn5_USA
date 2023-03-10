@@ -1,4 +1,6 @@
+// * if wrapped in curly brackets {}, that means the library contains multiple functions that due different things
 import { v4 as uuidv4 } from 'uuid';
+// * if not wrapped in curly brakcets {}, that means there is one parent function and within that function there is multiple functions inside of the parent
 import inquirer from 'inquirer';
 
 console.log(

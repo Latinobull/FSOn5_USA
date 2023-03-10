@@ -1,10 +1,9 @@
-import { generate } from './generate.js';
+import { generate } from './assets/generate.js';
+import { hello } from './assets/hello.js';
 import inquirer from 'inquirer';
 
 function start() {
-  console.log(
-    'Thank your for your interest in your job! Please fill out this form'
-  );
+  hello();
   inquirer
     .prompt([
       {
@@ -30,3 +29,9 @@ function start() {
     });
 }
 start();
+
+function clickEvent() {
+  //! do something
+}
+
+Element.addEventListener('click', clickEvent);
