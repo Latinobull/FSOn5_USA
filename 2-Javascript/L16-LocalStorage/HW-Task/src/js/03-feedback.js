@@ -23,6 +23,6 @@ if (savedFormData) {
 
 formEl.addEventListener('submit', e => {
   e.preventDefault();
-  formEl.reset();
+  formEl.reset();rty,metrgjklertdg
   localStorage.removeItem('feedback-form-state')
 });
