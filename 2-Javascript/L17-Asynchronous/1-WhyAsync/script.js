@@ -11,7 +11,7 @@ function startAsyncApp() {
 
   setTimeout(() => {
     console.log('Do something');
-  }, 0);
+  }, 5000);
 
   console.log('Async App finished');
 }
