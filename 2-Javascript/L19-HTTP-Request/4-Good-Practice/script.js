@@ -176,15 +176,8 @@ function fetchWeather(location) {
   var { lat } = location;
   var { lon } = location;
   var city = location.name;
-  const searchParams = new URLSearchParams({
-    lat: lat,
-    lon: lon,
-    units: 'imperial',
-    appid: weatherApiKey,
-  });
-  console.log(location);
 
-  var apiUrl = `${weatherApiRootUrl}/data/2.5/forecast?${searchParams}`;
+  var apiUrl = `${weatherApiRootUrl}/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${weatherApiKey}`;
 
   fetch(apiUrl)
     .then(function (res) {
