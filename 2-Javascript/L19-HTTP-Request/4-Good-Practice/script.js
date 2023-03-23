@@ -184,6 +184,7 @@ function fetchWeather(location) {
       return res.json();
     })
     .then(function (data) {
+      console.log(data);
       renderItems(city, data);
     })
     .catch(function (err) {
@@ -197,8 +198,9 @@ function fetchCoords(search) {
     limit: 5,
     appid: weatherApiKey,
   });
-
   var apiUrl = `${weatherApiRootUrl}/geo/1.0/direct?${searchParams}`;
+  var apiUrl2 = `${weatherApiRootUrl}/geo/1.0/direct?q=${search}&limit=5&appid=${weatherApiKey}`;
+
 
   fetch(apiUrl)
     .then(function (res) {
