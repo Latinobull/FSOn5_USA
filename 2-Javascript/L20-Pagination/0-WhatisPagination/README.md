@@ -1,0 +1,1 @@
+https://www.seoptimer.com/blog/what-is-pagination/
