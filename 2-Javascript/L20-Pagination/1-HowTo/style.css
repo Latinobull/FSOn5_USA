@@ -46,7 +46,7 @@ h2 {
 }
 .card {
   height: 100px;
-  width: 300px;
+  width: 200px;
   list-style-type: none;
   background-color: rgb(176, 176, 251);
   margin: 10px;
@@ -64,13 +64,13 @@ footer {
 }
 
 #nextBtn {
-  width: 100px;
+  width: 80px;
   height: 30px;
   float: right;
 }
 
 #prevBtn {
-  width: 100px;
+  width: 80px;
   height: 30px;
   float: left;
 }

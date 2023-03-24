@@ -40,3 +40,7 @@ form {
 label {
   display: flex;
 }
+
+#more {
+  display: none;
+}
