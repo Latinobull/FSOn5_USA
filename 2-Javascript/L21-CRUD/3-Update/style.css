@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+section {
+  width: 400px;
+  height: 200px;
+  background-color: #eee;
+  margin: 20px;
+  border: 3px solid #ccc;
+  text-align: center;
+  border-radius: 30px;
+}
