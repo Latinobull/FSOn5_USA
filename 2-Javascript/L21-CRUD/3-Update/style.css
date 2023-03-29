@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 section {
-  width: 400px;
+  width: 150px;
   height: 200px;
   background-color: #eee;
   margin: 20px;

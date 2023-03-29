@@ -19,3 +19,10 @@ fetch('http://localhost:3001/api/users', {
     });
   });
 
+containerEl.addEventListener('click', e => {
+  let userId = e.target.dataset.id;
+  console.log(userId);
+  fetch(`http://localhost:3001/api/users/${userId}`, {
+    method: 'DELETE',
+  }).then(() => console.log('User was deleted'));
+});
