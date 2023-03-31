@@ -1,7 +1,7 @@
 const containerEl = document.querySelector('.container');
 
 fetch('http://localhost:3001/api/users/', {
-    method: 'GET'
+  method: 'GET',
 })
   .then(res => res.json())
   .then(data => {
@@ -14,4 +14,5 @@ fetch('http://localhost:3001/api/users/', {
         `;
       containerEl.append(section);
     });
-  });
+  })
+  .catch(err => console.log(err));

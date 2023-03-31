@@ -18,6 +18,7 @@ function Submit(e) {
     .then(data => {
       console.log(data);
     });
+    
 }
 
 document.querySelector('form').addEventListener('submit', Submit);
