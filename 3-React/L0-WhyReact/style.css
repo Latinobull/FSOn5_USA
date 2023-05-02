@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f584ff;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 30px 0px;
+  width: 800px;
+  min-height: 300px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #f584ff;
+  padding: 20px;
+}
