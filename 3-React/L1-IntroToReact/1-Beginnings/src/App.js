@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
 function App() {
+  const name = 'Juanita';
+  const list = [
+    { color: 'red', title: 'First' },
+    { color: 'blue', title: 'About' },
+    { color: 'green', title: 'Contact' },
+  ];
+  for (let i = 0; i < 3; i++) {
+    console.log(i);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header color="red" title="First" />
+      <Header color="blue" title="About" />
+      <Header color="green" title="Contact" /> */}
+      {list.map(item => (
+        <Header color={item.color} title={item.title} />
+      ))}
     </div>
   );
 }
