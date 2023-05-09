@@ -1,0 +1,62 @@
+[
+  {
+    "id": "645a4e6cdb3eae001d7071b9",
+    "name": "Shoes",
+    "quantity": 13,
+    "price": 11.31
+  },
+  {
+    "id": "645a4e6c4e2751840d46c5b3",
+    "name": "Socks",
+    "quantity": 19,
+    "price": 24.71
+  },
+  {
+    "id": "645a4e6c595485cecb387381",
+    "name": "Pants",
+    "quantity": 14,
+    "price": 39.59
+  },
+  {
+    "id": "645a4e6cfe9bc4316b45ea7f",
+    "name": "Shirt",
+    "quantity": 4,
+    "price": 18.07
+  },
+  {
+    "id": "645a4e6ce5b86f4e1b432428",
+    "name": "Dress",
+    "quantity": 12,
+    "price": 16.76
+  },
+  {
+    "id": "645a4e6c0c557adda73a0c57",
+    "name": "Blouse",
+    "quantity": 15,
+    "price": 40.16
+  },
+  {
+    "id": "645a4e6cd26d281ed3268b6f",
+    "name": "Hat",
+    "quantity": 19,
+    "price": 53.97
+  },
+  {
+    "id": "645a4e6c2e56425ecb56b80b",
+    "name": "Earrings",
+    "quantity": 8,
+    "price": 25.18
+  },
+  {
+    "id": "645a4e6c7ef86dfa47015ea9",
+    "name": "Necklace",
+    "quantity": 14,
+    "price": 7.43
+  },
+  {
+    "id": "645a4e6ce1ffbaafe797f8e4",
+    "name": "Bobby Pin",
+    "quantity": 2,
+    "price": 16.65
+  }
+]
