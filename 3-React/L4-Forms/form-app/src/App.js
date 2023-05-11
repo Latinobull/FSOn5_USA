@@ -5,8 +5,6 @@ import Controlled from './component/Controlled';
 import FullForm from './component/FullForm';
 
 function App() {
-  const [myState, setMyState] = useState([]);
-  setMyState(myState.push('newData'));
   return (
     <div className="App">
       <h1>Lesson 4</h1>
