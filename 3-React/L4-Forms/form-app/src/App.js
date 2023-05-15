@@ -10,7 +10,7 @@ function App() {
       <h1>Lesson 4</h1>
       {/* <Uncontrolled /> */}
       {/* <Controlled /> */}
-      {/* <FullForm /> */}
+      <FullForm />
     </div>
   );
 }

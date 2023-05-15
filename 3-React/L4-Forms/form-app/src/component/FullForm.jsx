@@ -7,12 +7,29 @@ export default function FullForm() {
     subscribe: false,
     fruit: '',
   });
+  function handleCheckboxChange(event) {
+    const target = event.target;
 
+    const value = target.checked;
+    const name = target.name;
+
+    // setFormData(prev => {
+    //   return { ...prev, [name]: value };
+    // });
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
   function handleInputChange(event) {
     const target = event.target;
+
     const value = target.value;
     const name = target.name;
 
+    // setFormData(prev => {
+    //   return { ...prev, [name]: value };
+    // });
     setFormData({
       ...formData,
       [name]: value,
@@ -67,7 +84,7 @@ export default function FullForm() {
           id="subscribe"
           name="subscribe"
           checked={formData.subscribe}
-          onChange={handleInputChange}
+          onChange={handleCheckboxChange}
         />
       </div>
       <div>
