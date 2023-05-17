@@ -1,17 +1,16 @@
-import { useState } from 'react';
 import RecipeForm from './RecipeForm';
-export default function Broken() {
+import { useState } from 'react';
+export default function Working() {
   const [recipes, setRecipes] = useState([]);
 
-  // ? Arrays are complex datatypes
-  // * They can not updating using their own state variable
-
-  const addRecipe = newRecipe => {
+  const addRecipe = recipe => {
     setRecipes(prev => {
-      return [...prev, newRecipe];
+      return [...prev, recipe];
     });
   };
-  console.log(recipes);
+
+  console.log();
+
   return (
     <div>
       <h1>Recipe List</h1>
