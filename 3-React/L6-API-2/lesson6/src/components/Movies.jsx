@@ -11,9 +11,9 @@ export default function Movies() {
       <button>Movie</button>
       <button>Series</button>
       <MovieContainer>
-        <MovieCard key={item.imdbId}>
+        <MovieCard>
           <h3>Title</h3>
-          <img src={item.Poster} alt="img" />
+          <img src="" alt="img" />
           <h4> Released: year</h4>
         </MovieCard>
       </MovieContainer>
