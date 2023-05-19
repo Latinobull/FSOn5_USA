@@ -1,13 +1,15 @@
-export default function MovieContainer({ children }) {
+import { useState } from 'react';
+
+export default function MovieContainer(props) {
   return (
     <div
       style={{
         display: 'flex',
-        flexWrap: 'wrap',
         justifyContent: 'space-around',
+        flexWrap: 'wrap',
       }}
     >
-      {children}
+      {props.children}
     </div>
   );
 }

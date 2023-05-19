@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function MovieForm({ setSearch }) {
+export default function MovieForm(props) {
   const [input, setInput] = useState('');
 
   function handleInputChange(e) {
@@ -9,6 +9,7 @@ export default function MovieForm({ setSearch }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    props.setSearch(input);
   }
   return (
     <div>

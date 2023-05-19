@@ -1,0 +1,37 @@
+.item{
+    margin-top: 30px;
+    margin-left: 30px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+.image {
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+    .item {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .image {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .item {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+
+    .image {
+        height: 200px;
+    }
+}
