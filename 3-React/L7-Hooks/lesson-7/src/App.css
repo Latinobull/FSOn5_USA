@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+li {
+  margin-right: 10px;
+}
+
+.dark-mode {
+  background-color: #555;
+  color: #eee;
+}
+.dark-mode a {
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+.header-dark {
+  background-color: #222;
+}
