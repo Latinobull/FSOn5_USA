@@ -1,10 +1,14 @@
 import useFetch from '../hooks/useFetch';
 
 export default function Users() {
+  const { data, isLoading, error } = useFetch(
+    'https://fakerapi.it/api/v1/users?_quantity=10'
+  );
+
   return (
     <div>
       <h1>My users</h1>
-      {/* {loading && <p>Loading...</p>}
+      {isLoading && <p>Loading...</p>}
       {error && <p>Error {error}</p>}
       {data && (
         <div
@@ -32,7 +36,7 @@ export default function Users() {
             </div>
           ))}
         </div>
-      )} */}
+      )}
     </div>
   );
 }

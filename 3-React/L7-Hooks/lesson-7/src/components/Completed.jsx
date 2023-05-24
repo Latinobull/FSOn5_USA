@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import moment from 'moment';
-export default function Practice() {
-  // ? FIX THE STATE
-  // ? FIX THE useEFFECT
-  // TODO FIX THE ERROR MESSAGE
+export default function Completed() {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -36,7 +33,7 @@ export default function Practice() {
           throw new Error('Failed to fetch weather data');
         }
         const data2 = await response2.json();
-
+        console.log(data2);
         setWeatherData(data2);
         setError(null);
       } catch (error) {
@@ -48,7 +45,7 @@ export default function Practice() {
 
     fetchWeatherData();
   }, [city]);
-  console.log(weatherData);
+
   const handleInputChange = event => {
     setCity(event.target.value);
   };
