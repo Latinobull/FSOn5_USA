@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+li {
+  margin-right: 10px;
+}
+
+.dark-mode {
+  background-color: #555;
+  color: #eee;
+}
+.dark-mode a {
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+.header-dark {
+  background-color: #222;
+}
