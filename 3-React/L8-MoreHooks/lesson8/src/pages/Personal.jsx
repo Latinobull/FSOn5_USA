@@ -4,12 +4,14 @@ import Start from '../component/Start';
 import { useUser } from '../context/UserContext';
 
 export default function Personal() {
-  const { isLoggedIn, err } = useUser();
+  const { err, isLoggedIn } = useUser();
+  console.log(isLoggedIn);
   return (
     <div>
       <h2>Personal</h2>
       <PersonalHeader />
-      <Form /> <Start />
+      {isLoggedIn ? <Start /> : <Form />}
+      {err && <h4>{err}</h4>}
     </div>
   );
 }

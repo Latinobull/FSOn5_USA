@@ -1,12 +1,15 @@
 import Header from '../component/Header';
+import { DarkModeProvider } from '../context/DarkContext';
 
 export default function MyPage() {
   return (
-    <div>
-      <Header />
+    <DarkModeProvider>
       <div>
-        <h1>My Portfolio </h1>
+        <Header />
+        <div>
+          <h1>My Portfolio </h1>
+        </div>
       </div>
-    </div>
+    </DarkModeProvider>
   );
 }

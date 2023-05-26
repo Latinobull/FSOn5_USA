@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
   const [err, setErr] = useState(null);
   const authenticatedUser = {
     username: 'DonnahueG',
-    password: 'password12345!',
+    password: 'abc',
   };
 
   function logIn(e) {
@@ -33,7 +33,7 @@ export const UserProvider = ({ children }) => {
 
   return (
     <UserContext.Provider
-      value={{ isLoggedIn, user, err, setUser, logIn, logOut }}
+      value={{ isLoggedIn, user, setUser, err, logIn, logOut }}
     >
       {children}
     </UserContext.Provider>

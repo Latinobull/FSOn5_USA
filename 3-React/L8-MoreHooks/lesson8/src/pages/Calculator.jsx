@@ -4,7 +4,25 @@ import styles from '../styles/CalculatorApp.module.css';
 export default function CalculatorApp() {
   const [expression, setExpression] = useState('');
   const [result, setResult] = useState('');
-
+  const calculatorButtons = [
+    '1',
+    '2',
+    '3',
+    '+',
+    '4',
+    '5',
+    '6',
+    '-',
+    '7',
+    '8',
+    '9',
+    '*',
+    '0',
+    '.',
+    '=',
+    '/',
+    'C',
+  ];
   const handleClick = value => {
     setExpression(prevExpression => prevExpression + value);
   };
@@ -21,6 +39,17 @@ export default function CalculatorApp() {
   const handleClear = () => {
     setExpression('');
     setResult('');
+  };
+
+  const onClickSwitch = item => {
+    switch (item) {
+      case '=':
+        return handleCalculate;
+      case 'C':
+        return handleClear;
+      default:
+        return () => handleClick(item);
+    }
   };
 
   return (
@@ -42,9 +71,27 @@ export default function CalculatorApp() {
           readOnly
           className={styles.resultInput}
         />
-
+        {/* 
+Option 1 
+Put in an array and map it
+                item === '='
+                  ? handleCalculate
+                  : item === 'C'
+                  ? handleClear
+                  : () => handleClick(item)
+Option 2
+*/}
         <div className={styles.buttons}>
-          <button className={styles.btn} onClick={() => handleClick('1')}>
+          {calculatorButtons.map((item, idx) => (
+            <button
+              className={styles.btn}
+              key={idx}
+              onClick={onClickSwitch(item)}
+            >
+              {item}
+            </button>
+          ))}
+          {/* <button className={styles.btn} onClick={() => handleClick('1')}>
             1
           </button>
           <button className={styles.btn} onClick={() => handleClick('2')}>
@@ -95,7 +142,7 @@ export default function CalculatorApp() {
           </button>
           <button className={styles.btn} onClick={handleClear}>
             C
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

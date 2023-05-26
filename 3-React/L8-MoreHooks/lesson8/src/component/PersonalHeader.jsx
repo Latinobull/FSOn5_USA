@@ -15,8 +15,11 @@ export default function PersonalHeader() {
         <li>
           <a href="#">Home</a>
         </li>
-
+        {isLoggedIn ? (
+          <button onClick={logOut}>Logout</button>
+        ) : (
           <p>Log in Below</p>
+        )}
       </ul>
     </div>
   );

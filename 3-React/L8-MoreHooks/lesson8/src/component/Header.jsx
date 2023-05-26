@@ -1,5 +1,6 @@
-import { useDark } from '../context/DarkContext';
+import { useDarkMode } from '../context/DarkContext';
 export default function Header() {
+  const { isDarkMode, handleModeToggle } = useDarkMode();
   return (
     <div
       style={{
@@ -7,7 +8,7 @@ export default function Header() {
         justifyContent: 'space-between',
         alignItems: 'center',
       }}
-      // className={isDarkMode ? 'header-dark' : ''}
+      className={isDarkMode ? 'header-dark' : ''}
     >
       <h2>John Doe</h2>
       <ul style={{ display: 'flex', listStyle: 'none' }}>
@@ -23,7 +24,7 @@ export default function Header() {
         <li>
           <a href="#">Resume</a>
         </li>
-        <button>Change mode</button>
+        <button onClick={handleModeToggle}>Change mode</button>
       </ul>
     </div>
   );

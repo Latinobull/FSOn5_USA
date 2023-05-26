@@ -12,7 +12,7 @@ export default function Start() {
       <h3>Welcome User</h3>
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         {accounts.map((item, idx) => (
-          <PasswordCard item={item} idx={idx} />
+          <PasswordCard item={item} key={idx} />
         ))}
       </div>
     </div>
