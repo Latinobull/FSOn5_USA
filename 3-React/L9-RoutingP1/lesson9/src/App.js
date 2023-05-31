@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       {/* <NoRouting /> */}
-      <WithRouting />
+      {/* <WithRouting /> */}
       {/* https://www.strandbooks.com/events */}
-      {/* <MovieApp /> */}
+      <MovieApp />
     </div>
   );
 }

@@ -10,6 +10,7 @@ export default function Landing() {
   const [search, setSearch] = useState('');
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+
   const nav = useNavigate();
   useEffect(() => {
     if (search === '') return;

@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 export default function SecondHeader() {
   return (
     <div
@@ -10,16 +11,24 @@ export default function SecondHeader() {
       <h2>InstaBook</h2>
       <ul style={{ display: 'flex', listStyle: 'none' }}>
         <li>
-          <a >Home</a>
+          <NavLink className="nav" to="/">
+            Home
+          </NavLink>
         </li>
         <li>
-          <a >About</a>
+          <NavLink className="nav" to="/about">
+            About
+          </NavLink>
         </li>
         <li>
-          <a >Contact</a>
+          <NavLink className="nav" to="/contact">
+            Contact
+          </NavLink>
         </li>
         <li>
-          <a>Resume</a>
+          <NavLink className="nav" to="/resume">
+            Resume
+          </NavLink>
         </li>
       </ul>
     </div>

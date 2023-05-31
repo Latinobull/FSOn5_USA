@@ -7,6 +7,7 @@ export default function MovieApp() {
     <div>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/single/:movieID" element={<SingleMovie />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
