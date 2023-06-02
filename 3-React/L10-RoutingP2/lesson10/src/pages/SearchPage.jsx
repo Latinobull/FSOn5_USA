@@ -8,9 +8,9 @@ export default function SearchPage() {
       <Link to={'/'}>Admin Page</Link>
       <Routes>
         <Route path="/" element={<AdminLanding />} />
-        <Route path="/search" element={<Search />} />
-
-        <Route path="people" element={<People />} />
+        <Route path="/search" element={<Search />}>
+          <Route path="people" element={<People />} />
+        </Route>
       </Routes>
     </div>
   );

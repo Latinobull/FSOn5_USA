@@ -6,8 +6,8 @@ import SearchPage from './pages/SearchPage';
 function App() {
   return (
     <div className="App">
-      {/* <SearchPage /> */}
-      <WhyLazy />
+      <SearchPage />
+      {/* <WhyLazy /> */}
     </div>
   );
 }

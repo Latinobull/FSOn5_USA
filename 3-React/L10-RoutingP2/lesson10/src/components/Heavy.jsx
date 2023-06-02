@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Heavy() {
   const content = [];
   for (let i = 0; i < 1000; i++) {
@@ -7,6 +9,9 @@ export default function Heavy() {
   return (
     <div>
       <h1>Heavy Content Component</h1>
+      <h5>
+        Click <Link to="/">Here</Link> to go back to home
+      </h5>
       {content}
     </div>
   );
