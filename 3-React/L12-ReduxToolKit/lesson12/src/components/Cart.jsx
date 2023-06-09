@@ -1,10 +1,11 @@
 import Card from './Card';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart } from '../redux/actions';
+import { removeFromCart } from '../redux/slice';
 export default function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector(state => state.cart);
-  console.log(cart);
+  let total = 0;
+  cart.forEach(item => (total += item.price));
   return (
     <div>
       <h3>Cart</h3>
@@ -26,6 +27,7 @@ export default function Cart() {
           </Card>
         ))}
       </div>
+      <h5>Total is ${total}</h5>
     </div>
   );
 }

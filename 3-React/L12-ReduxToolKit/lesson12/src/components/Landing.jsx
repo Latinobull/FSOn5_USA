@@ -1,6 +1,6 @@
 import Card from './Card';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeFilter, addToCart } from '../redux/actions';
+import { changeFilter, addToCart } from '../redux/slice';
 export default function Landing() {
   const dispatch = useDispatch();
   const products = useSelector(state => state.products);
