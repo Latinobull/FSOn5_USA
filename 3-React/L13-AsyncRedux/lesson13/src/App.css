@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.nav {
+  color: black;
+}
+
+.nav.active {
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+}
