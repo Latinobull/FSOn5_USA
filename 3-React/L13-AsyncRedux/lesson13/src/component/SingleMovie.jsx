@@ -1,20 +1,16 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { fetchSingleMovie } from '../redux/operations';
+import { useDispatch, useSelector } from 'react-redux';
+
 export default function SingleMovie() {
   const { movieID } = useParams();
-  const [data, setData] = useState(null);
-  console.log(movieID);
+  const dispatch = useDispatch();
+  const data = useSelector(state => state.singleMovie);
   useEffect(() => {
-    async function fetchData() {
-      const res = await axios.get(
-        `http://www.omdbapi.com/?apikey=5aa42c8f&i=${movieID}`
-      );
-      setData(res.data);
-    }
-    fetchData();
+    dispatch(fetchSingleMovie({ id: movieID }));
   }, []);
-  console.log(data);
 
   return (
     <div>

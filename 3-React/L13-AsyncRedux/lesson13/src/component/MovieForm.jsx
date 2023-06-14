@@ -1,7 +1,9 @@
 import { useState } from 'react';
-
-export default function MovieForm(props) {
+import { useDispatch } from 'react-redux';
+import { setSearch } from '../redux/slice';
+export default function MovieForm() {
   const [input, setInput] = useState('');
+  const dispatch = useDispatch();
 
   function handleInputChange(e) {
     setInput(e.target.value);
@@ -9,7 +11,7 @@ export default function MovieForm(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.setSearch(input);
+    dispatch(setSearch(input));
   }
   return (
     <div>
