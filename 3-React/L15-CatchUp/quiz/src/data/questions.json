@@ -1,0 +1,39 @@
+{
+  "quiz": [
+    {
+      "question": "What is the output of the following code?\n\nprint(2 + 3 * 4)",
+      "choices": ["14", "20", "25", "32"],
+      "correctAnswer": "14"
+    },
+    {
+      "question": "Which programming language is known for its use in web development?",
+      "choices": ["Java", "Python", "JavaScript", "C#"],
+      "correctAnswer": "JavaScript"
+    },
+    {
+      "question": "What does HTML stand for?",
+      "choices": [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Text Main Language"
+      ],
+      "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "What is the file extension for a Python source code file?",
+      "choices": [".py", ".js", ".html", ".css"],
+      "correctAnswer": ".py"
+    },
+    {
+      "question": "What does CSS stand for?",
+      "choices": [
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "correctAnswer": "Cascading Style Sheets"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(8, 98, 98);
+  padding: 20px 30px;
+}
+
+header h1 {
+  color: #eee;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul a {
+  color: #eee;
+  text-decoration: none;
+  padding: 0px 30px;
+}
+a.active {
+  color: rgb(8, 98, 98);
+  border: solid 1px #eee;
+  border-radius: 20px;
+  background-color: #eee;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page main {
+  flex-grow: 1;
+}
+
+.card {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card button {
+  font-size: 30px;
+}
+
+footer {
+  background-color: rgb(8, 98, 98);
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+}
