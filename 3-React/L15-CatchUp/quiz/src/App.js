@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Landing from './pages/Landing';
 import Highscores from './pages/HighScores';
 import Quiz from './pages/Quiz';
+import GameOver from './pages/GameOver';
 function App() {
   return (
     <div className="page">
@@ -12,7 +13,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="quiz" element={<Quiz />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/end" element={<GameOver />} />
         <Route path="/highscores" element={<Highscores />} />
       </Routes>
       <Footer />

@@ -1,7 +1,7 @@
 {
   "quiz": [
     {
-      "question": "What is the output of the following code?\n\nprint(2 + 3 * 4)",
+      "question": "What is the output of the following code?\n\nconsole.log(2 + 3 * 4)",
       "choices": ["14", "20", "25", "32"],
       "correctAnswer": "14"
     },

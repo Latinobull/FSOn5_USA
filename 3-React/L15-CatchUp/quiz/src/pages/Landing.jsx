@@ -1,8 +1,6 @@
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 export default function Landing() {
-  const data = useSelector(state => state);
-  console.log(data);
+
   const navigation = useNavigate();
   return (
     <main>

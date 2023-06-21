@@ -1,3 +1,11 @@
+.loader {
+  border: 13px solid #ccc;
+  border-top: 13px solid rgb(8, 98, 98);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: spin 0.5s infinite linear;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -50,4 +58,13 @@ footer {
   color: #eee;
   text-align: center;
   padding: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
