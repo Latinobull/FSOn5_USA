@@ -6,6 +6,13 @@
   border-radius: 50%;
   animation: spin 0.5s infinite linear;
 }
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -38,6 +45,7 @@ a.active {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  text-align: center;
 }
 
 .page main {

@@ -8,7 +8,6 @@ export default function GameOver() {
       <h4>Your final score was {score}</h4>
       <h5>Please enter your name below</h5>
       <form>
-        <input type="text" name="name" id="name" />
         <button type="submit">Submit</button>
       </form>
     </main>
