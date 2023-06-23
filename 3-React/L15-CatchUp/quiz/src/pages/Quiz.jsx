@@ -40,12 +40,9 @@ export default function Quiz() {
     };
   }, [index]);
 
-  console.log(loading);
   function handleClick(e) {
     dispatch(answerQuestion(e.target.textContent));
   }
-  console.log('index', index);
-  console.log('allquestions', allQuestions.length);
   return (
     <main>
       <div
