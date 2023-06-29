@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import Button from '@mui/material/Button';
-import { changeFilter } from '../redux/slice';
+import { changeFilter } from '../redux/contacts/slice';
 import Form from '../component/Form';
 import { useSelector, useDispatch } from 'react-redux';
-import { getContacts, getFilter } from '../redux/selectors';
-import { deleteContacts, fetchContacts } from '../redux/operators';
+import { getContacts, getFilter } from '../redux/contacts/selectors';
+import { deleteContacts, fetchContacts } from '../redux/contacts/operators';
 import filterFunction from '../utils/filter';
 import {
   Card,
@@ -41,8 +41,8 @@ export default function Phonebook() {
       <Card sx={{ margin: '0px 300px', backgroundColor: 'white' }}>
         {contacts.length > 0 &&
           filteredContacts.map(contact => (
-            <>
-              <ListItem key={contact.id}>
+            <div key={contact.id}>
+              <ListItem>
                 <ListItemText primary={`${contact.name}: ${contact.phone}`} />
                 <Button
                   variant="contained"
@@ -53,7 +53,7 @@ export default function Phonebook() {
                 </Button>
               </ListItem>
               <Divider />
-            </>
+            </div>
           ))}
       </Card>
     </div>
