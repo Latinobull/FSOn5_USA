@@ -1,4 +1,4 @@
-import { Button, Card,TextField } from '@mui/material';
+import { Button, Card, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
@@ -21,7 +21,6 @@ export default function Login() {
             alignItems: 'center',
           }}
         >
-          <TextField label="Full Name" required />
           <TextField label="Email" required />
           <TextField label="Password" type="password" required />
           <div>

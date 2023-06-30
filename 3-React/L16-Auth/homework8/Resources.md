@@ -26,6 +26,7 @@ https://roadmap.sh/
 - https://storybook.js.org/
 - https://tailwindcss.com/
 - https://react.i18next.com/
+- https://reactnative.dev/
 
 ### Component Libraries
 
@@ -36,3 +37,7 @@ https://roadmap.sh/
 
 - https://github.com/sudheerj/reactjs-interview-questions
 - https://github.com/sudheerj/javascript-interview-questions
+
+JD Tadlock
+
+- https://gist.github.com/jdtdesigns/936839ea2cea6b4d3193b520c750a09b

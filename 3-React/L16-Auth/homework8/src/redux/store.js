@@ -8,4 +8,8 @@ const store = configureStore({
   },
 });
 
+// configureStore({
+//   reducer: rootReducer
+// })
+
 export default store;

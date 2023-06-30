@@ -5,14 +5,37 @@ import Phonebook from './pages/Phonebook';
 import { Routes, Route } from 'react-router-dom';
 import Signup from './pages/Signup';
 import Header from './component/Header';
+import PrivateRoute from './component/PrivateRoute';
+import PublicRoute from './component/PublicRoute';
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Phonebook />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Phonebook />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <Login />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <PublicRoute>
+              <Signup />
+            </PublicRoute>
+          }
+        />
       </Routes>
     </div>
   );
