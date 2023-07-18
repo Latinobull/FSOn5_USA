@@ -1,0 +1,12 @@
+{
+  "name": "l1-introductions",
+  "version": "1.0.0",
+  "main": "1-Basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
