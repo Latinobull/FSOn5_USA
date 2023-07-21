@@ -1,0 +1,9 @@
+[
+  { "firstname": "Jack", "color": true, "pizza": ["pepperoni"] },
+  { "firstname": "Jill", "color": false, "pizza": ["pineapple", "chicken"] },
+  {
+    "firstname": "Brian",
+    "color": true,
+    "pizza": ["chicken", "salami", "sausage"]
+  }
+]
