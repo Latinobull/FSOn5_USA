@@ -1,8 +1,25 @@
-// you can add parameters if you want!
-function binarySearch(arr, target) {
-    // Your code goes here!
+// * you can add parameters if you want!
+function binarySearch(arr, target, leftIndex = 0, rightIndex = arr.length - 1) {
+  // * Your code goes here!
+  //? LINEAR SEARCH
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] === target) {
+  //     return i;
+  //   }
+  // }
+  // return -1;
+  //? BINARY SEARCH
+  if (leftIndex <= rightIndex) {
+    const midIndex = Math.floor((leftIndex + rightIndex) / 2);
 
-    
+    if (arr[midIndex] === target) {
+      return midIndex;
+    } else if (arr[midIndex] < target) {
+      return binarySearch(arr, target, midIndex + 1, rightIndex);
+    } else {
+      return binarySearch(arr, target, leftIndex, midIndex - 1);
+    }
+  }
   return -1;
 }
 
