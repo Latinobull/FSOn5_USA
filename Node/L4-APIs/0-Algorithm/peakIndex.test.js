@@ -12,8 +12,8 @@ describe('peakIndexInMountainArray', () => {
   });
 
   test('should find peak element index in a mountain array with 4 elements', () => {
-    const arr = [1, 3, 5, 2];
-    expect(peakIndexInMountainArray(arr)).toBe(2);
+    const arr = [1, 3, 5, 8];
+    expect(peakIndexInMountainArray(arr)).toBe(3);
   });
 
   test('should find peak element index in a mountain array with 19 elements', () => {
