@@ -1,0 +1,142 @@
+[
+  {
+    "firstname": "Gertrude",
+    "lastname": "Morrison",
+    "password": "labore",
+    "age": 56,
+    "admin": true
+  },
+  {
+    "firstname": "Gray",
+    "lastname": "Stafford",
+    "password": "velit",
+    "age": 36,
+    "admin": false
+  },
+  {
+    "firstname": "Martina",
+    "lastname": "Garrett",
+    "password": "pariatur",
+    "age": 20,
+    "admin": false
+  },
+  {
+    "firstname": "Judith",
+    "lastname": "Valenzuela",
+    "password": "sit",
+    "age": 69,
+    "admin": true
+  },
+  {
+    "firstname": "Obrien",
+    "lastname": "Hill",
+    "password": "eu",
+    "age": 26,
+    "admin": true
+  },
+  {
+    "firstname": "Forbes",
+    "lastname": "Velasquez",
+    "password": "excepteur",
+    "age": 37,
+    "admin": true
+  },
+  {
+    "firstname": "Ellen",
+    "lastname": "Whitney",
+    "password": "laborum",
+    "age": 71,
+    "admin": true
+  },
+  {
+    "firstname": "Raquel",
+    "lastname": "Weaver",
+    "password": "mollit",
+    "age": 52,
+    "admin": true
+  },
+  {
+    "firstname": "Jasmine",
+    "lastname": "Bray",
+    "password": "dolore",
+    "age": 71,
+    "admin": true
+  },
+  {
+    "firstname": "Fox",
+    "lastname": "Irwin",
+    "password": "incididunt",
+    "age": 46,
+    "admin": false
+  },
+  {
+    "firstname": "Randi",
+    "lastname": "Lee",
+    "password": "qui",
+    "age": 59,
+    "admin": true
+  },
+  {
+    "firstname": "Ivy",
+    "lastname": "Jordan",
+    "password": "non",
+    "age": 63,
+    "admin": false
+  },
+  {
+    "firstname": "Marva",
+    "lastname": "Bullock",
+    "password": "est",
+    "age": 62,
+    "admin": true
+  },
+  {
+    "firstname": "Courtney",
+    "lastname": "Spence",
+    "password": "culpa",
+    "age": 70,
+    "admin": false
+  },
+  {
+    "firstname": "Vicky",
+    "lastname": "Blackwell",
+    "password": "sint",
+    "age": 18,
+    "admin": false
+  },
+  {
+    "firstname": "Adele",
+    "lastname": "Hines",
+    "password": "do",
+    "age": 30,
+    "admin": false
+  },
+  {
+    "firstname": "Holloway",
+    "lastname": "Le",
+    "password": "dolor",
+    "age": 68,
+    "admin": true
+  },
+  {
+    "firstname": "Linda",
+    "lastname": "Pittman",
+    "password": "nulla",
+    "age": 57,
+    "admin": false
+  },
+  {
+    "firstname": "Burnett",
+    "lastname": "Wyatt",
+    "password": "aute",
+    "age": 57,
+    "admin": true
+  },
+  {
+    "firstname": "Rivas",
+    "lastname": "Chase",
+    "password": "elit",
+    "age": 45,
+    "admin": false
+  }
+]
