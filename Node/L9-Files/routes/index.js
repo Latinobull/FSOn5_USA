@@ -7,14 +7,14 @@ const {
   deleteEmployee,
   updateEmployee,
 } = require('../controllers/employeeController');
-const authMiddleware = require('../utils/authMiddleware');
+const auth = require('../utils/auth');
 
-router.route('/').get(getEmployees).post(authMiddleware, createEmployee);
+router.route('/').get(auth, getEmployees).post(auth, createEmployee);
 router
   .route('/:id')
-  .get(authMiddleware, getSingleEmployee)
-  .put(authMiddleware, updateEmployee)
-  .delete(authMiddleware, deleteEmployee);
+  .get(auth, getSingleEmployee)
+  .put(auth, updateEmployee)
+  .delete(auth, deleteEmployee);
 
 router.route('/admin/login').post(login);
 router.route('/admin/signup').post(signup);

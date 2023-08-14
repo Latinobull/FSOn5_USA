@@ -1,19 +1,11 @@
 const Employees = require('../models/Employee');
 const bcrypt = require('bcrypt');
-const { getDocs, collection } = require('firebase/firestore');
-const { db } = require('../firebase');
 const jwt = require('jsonwebtoken');
-
 const employeesController = {
   async getEmployees(req, res) {
     try {
       // console.log(req.session);
-      // const data = await Employees.find().select('-__v -admin -password')
-      const query = await getDocs(collection(db, 'employee'));
-      const data = [];
-      query.forEach(doc => {
-        data.push(doc.data());
-      });
+      const data = await Employees.find().select('-__v -admin -password')
       res.json(data);
     } catch (err) {
       console.log(err);
