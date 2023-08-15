@@ -1,11 +1,8 @@
 const Employees = require('../models/Employee');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 const employeesController = {
   async getEmployees(req, res) {
     try {
-      // console.log(req.session);
-      const data = await Employees.find().select('-__v -admin -password')
+      const data = await Employees.find().select('-__v -admin -password');
       res.json(data);
     } catch (err) {
       console.log(err);
