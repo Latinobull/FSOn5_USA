@@ -1,9 +1,9 @@
 const Employees = require('../models/Employee');
 const bcrypt = require('bcrypt');
 const { getDocs, collection } = require('firebase/firestore');
-const { db } = require('../firebase');
-const jwt = require('jsonwebtoken');
-
+const { db, storage } = require('../firebase');
+const { ref, uploadBytes } = require('firebase/storage');
+const multer = require('multer');
 const employeesController = {
   async getEmployees(req, res) {
     try {
@@ -70,6 +70,19 @@ const employeesController = {
       console.log(err);
       res.status(500).json(err);
     }
+  },
+  async uploadFile(req, res) {
+    const upload = multer();
+    upload.single('picture')(req, res, async () => {
+      const user = Employees.findOne({ id: 'asjkdaskhd' });
+      try {
+        const imageRef = ref(storage, `images/${user.id}`);
+        await uploadBytes(imageRef, req.file.buffer);
+        res.json({ message: 'File Uploaded' });
+      } catch (err) {
+        res.json(err);
+      }
+    });
   },
 };
 

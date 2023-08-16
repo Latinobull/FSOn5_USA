@@ -6,6 +6,7 @@ const {
   getSingleEmployee,
   deleteEmployee,
   updateEmployee,
+  uploadFile,
 } = require('../controllers/employeeController');
 const authMiddleware = require('../utils/authMiddleware');
 
@@ -19,5 +20,5 @@ router
 router.route('/admin/login').post(login);
 router.route('/admin/signup').post(signup);
 router.route('/admin/logout').post(logout);
-
+router.route('/upload').post(uploadFile);
 module.exports = router;

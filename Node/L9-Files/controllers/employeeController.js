@@ -1,4 +1,10 @@
 const Employees = require('../models/Employee');
+const multer = require('multer');
+const fs = require('fs').promises;
+const path = require('path');
+const uploadPath = path.join(process.cwd(), 'upload'); //check/ validation folder
+const imagesPath = path.join(process.cwd(), 'images'); // storing/resting place for the files
+console.log(imagesPath);
 const employeesController = {
   async getEmployees(req, res) {
     try {
@@ -59,6 +65,33 @@ const employeesController = {
       console.log(err);
       res.status(500).json(err);
     }
+  },
+
+  async uploadFile(req, res) {
+    const storage = multer.diskStorage({
+      destination: (req, file, cb) => {
+        cb(null, uploadPath);
+      },
+      filename: (req, file, cb) => {
+        cb(null, file.originalname);
+      },
+    });
+
+    const upload = multer({
+      storage: storage,
+      limits: {
+        fileSize: 1048576, //1MB
+      },
+    });
+
+    const user = await Employees.findOne({ _id: '64cc4444cc3a543fdc662509' });
+    upload.single('picture')(req, res, async function (err) {
+      const { path: tempName } = req.file;
+      // path.join(directory, name of file)
+      const fileName = path.join(imagesPath, user.id + '.jpg');
+      await fs.rename(tempName, fileName);
+      res.json(req.file);
+    });
   },
 };
 

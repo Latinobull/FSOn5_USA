@@ -6,10 +6,11 @@ const {
   getSingleEmployee,
   deleteEmployee,
   updateEmployee,
+  uploadFile,
 } = require('../controllers/employeeController');
 const auth = require('../utils/auth');
 
-router.route('/').get(auth, getEmployees).post(auth, createEmployee);
+router.route('/').get(getEmployees).post(auth, createEmployee);
 router
   .route('/:id')
   .get(auth, getSingleEmployee)
@@ -19,5 +20,5 @@ router
 router.route('/admin/login').post(login);
 router.route('/admin/signup').post(signup);
 router.route('/admin/logout').post(logout);
-
+router.route('/upload').post(uploadFile);
 module.exports = router;
