@@ -1,0 +1,19 @@
+{
+  "name": "2-realworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "jest": "^29.6.2"
+  },
+  "dependencies": {
+    "mongoose": "^7.4.3"
+  }
+}
