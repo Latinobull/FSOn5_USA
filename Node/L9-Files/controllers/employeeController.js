@@ -85,10 +85,13 @@ const employeesController = {
     });
 
     const user = await Employees.findOne({ _id: '64cc4444cc3a543fdc662509' });
-    upload.single('picture')(req, res, async function (err) {
+    upload.array('picture')(req, res, async function (err) {
       const { path: tempName } = req.file;
+      const filetype = tempName.split('.')[1];
+      console.log(filetype);
+
       // path.join(directory, name of file)
-      const fileName = path.join(imagesPath, user.id + '.jpg');
+      const fileName = path.join(imagesPath, user.id + '.' + filetype);
       await fs.rename(tempName, fileName);
       res.json(req.file);
     });

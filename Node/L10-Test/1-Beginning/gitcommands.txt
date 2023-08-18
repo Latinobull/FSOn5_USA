@@ -1,0 +1,8 @@
+cd = change directories/ send you back to the root of your computer
+ls = show all folders and files in the current directory
+cd foldername = move you up in a foldername
+cd .. = move you down in a foldername
+rm filename = remove files
+rm -r folder = remove folders
+mkdir name = make folders
+touch name = make files
