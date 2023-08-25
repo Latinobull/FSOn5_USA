@@ -7,6 +7,7 @@ export default function SignUp({ setSignedIn, setUsername, username }) {
   }
   return (
     <div>
+      <h1>Sign up Page</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

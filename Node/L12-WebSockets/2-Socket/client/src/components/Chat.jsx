@@ -4,8 +4,25 @@ import io from 'socket.io-client';
 export default function Chat({ username, setSignedIn }) {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
+  const [socket, setSocket] = useState(null);
+  useEffect(() => {
+    const newSocket = io('http://localhost:3001');
+    setSocket(newSocket);
 
-  function sendMessage() {}
+    newSocket.on('clientMessage', data => {
+      setMessages(prev => [...prev, data]);
+    });
+
+    newSocket.emit('userJoined', username);
+
+    return () => {
+      newSocket.disconnect();
+    };
+  }, []);
+
+  function sendMessage() {
+    socket.emit('serverMessage', `${username} : ${inputMessage}`);
+  }
   function handleDisconnect() {
     localStorage.removeItem('signedIn');
     setSignedIn(false);
@@ -13,6 +30,7 @@ export default function Chat({ username, setSignedIn }) {
 
   return (
     <div>
+      <h1>Chat</h1>
       <ul>
         {messages.map((message, index) => (
           <li key={index}>{message}</li>
